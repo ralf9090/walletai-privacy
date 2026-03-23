@@ -5,97 +5,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallet AI - Privacy Policy</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-        h1 { color: #6C3CE1; }
-        h2 { color: #444; margin-top: 30px; }
-        .updated { color: #666; font-style: italic; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px 20px 40px;
+            line-height: 1.7;
+            color: #e0e0e0;
+            background-color: #1a1a2e;
+        }
+        h1 {
+            color: #7c4dff;
+            font-size: 1.8em;
+            margin-bottom: 4px;
+        }
+        h2 {
+            color: #b388ff;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-size: 1.25em;
+            border-bottom: 1px solid #2a2a4a;
+            padding-bottom: 6px;
+        }
+        h3 {
+            color: #ce93d8;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        ul {
+            margin: 8px 0 16px 24px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        strong {
+            color: #f0f0f0;
+        }
+        a {
+            color: #7c4dff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .updated {
+            color: #9e9e9e;
+            font-style: italic;
+            margin-bottom: 24px;
+            display: block;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #2a2a4a;
+            margin: 32px 0 16px;
+        }
+        .footer {
+            font-size: 0.85em;
+            color: #757575;
+        }
     </style>
 </head>
 <body>
     <h1>Wallet AI - Privacy Policy</h1>
-    <p class="updated">Last updated: February 5, 2026</p>
+    <span class="updated">Last updated: March 23, 2026</span>
 
     <h2>1. Introduction</h2>
-    <p>Wallet AI ("we", "our", or "the app") is a personal finance management application that helps you track expenses, manage budgets, and achieve your financial goals with AI-powered insights and gamification features. Your privacy is important to us.</p>
+    <p>Wallet AI ("we", "our", or "the app") is a personal finance management application developed by Batuhan Senavci. The app helps you track expenses, manage budgets, set savings goals, and gain AI-powered financial insights. This Privacy Policy explains what information the app collects, how it is used, who it is shared with, and what rights you have regarding your data. By using Wallet AI, you agree to the practices described in this policy.</p>
 
     <h2>2. Information We Collect</h2>
+
     <h3>2.1 Information You Provide</h3>
+    <p>All financial data in Wallet AI is manually entered by you. This includes:</p>
     <ul>
-        <li><strong>Account Information:</strong> Name, email address when you create an account.</li>
-        <li><strong>Financial Data:</strong> Expense amounts, categories, budget limits, savings goals, and subscription details that you manually enter.</li>
-        <li><strong>Preferences:</strong> Currency, language, spending style, and notification preferences.</li>
+        <li><strong>Expense and income records:</strong> amounts, categories, dates, and optional notes you attach to each transaction.</li>
+        <li><strong>Budget amounts:</strong> monthly or category-based budget limits you set within the app.</li>
+        <li><strong>Savings goals:</strong> target amounts, goal names, and progress you track.</li>
+        <li><strong>Subscription details:</strong> subscription names, renewal dates, and amounts you choose to log.</li>
+        <li><strong>Preferences:</strong> currency selection, notification settings, and display preferences.</li>
     </ul>
+
     <h3>2.2 Automatically Collected Information</h3>
     <ul>
-        <li><strong>Usage Data:</strong> App usage patterns such as login streaks, XP earned, and badges achieved (gamification data).</li>
-        <li><strong>Device Information:</strong> Device type and operating system version for compatibility purposes.</li>
+        <li><strong>Crash reports:</strong> Standard iOS crash diagnostics that help us identify and fix bugs.</li>
+        <li><strong>Device information:</strong> Operating system version and device type, collected automatically by iOS for compatibility and crash reporting purposes.</li>
     </ul>
+
     <h3>2.3 Information We Do NOT Collect</h3>
     <ul>
-        <li>We do NOT access your bank accounts or financial institutions.</li>
-        <li>We do NOT collect location data.</li>
-        <li>We do NOT use advertising trackers.</li>
-        <li>We do NOT sell your data to third parties.</li>
+        <li>We do <strong>not</strong> access your bank accounts, credit cards, or any financial institution.</li>
+        <li>We do <strong>not</strong> collect your location or GPS data.</li>
+        <li>We do <strong>not</strong> access your contacts, photos, camera, or microphone.</li>
+        <li>We do <strong>not</strong> collect your name, email address, or any personally identifiable account information.</li>
+        <li>We do <strong>not</strong> sell or rent your data to any third party.</li>
     </ul>
 
     <h2>3. How We Use Your Information</h2>
+
+    <h3>3.1 Local Storage</h3>
+    <p>All financial data you enter is stored locally on your device in a SQLite database. This data never leaves your device unless you explicitly request an AI analysis. The app does not have user accounts or cloud sync; your data lives solely on your iPhone.</p>
+
+    <h3>3.2 AI-Powered Analysis</h3>
+    <p>When you choose to use the AI analysis feature, the app sends your financial data (expense amounts, categories, dates, and notes) to the DeepSeek API through a secure Supabase proxy server. This is done solely to generate personalized financial insights and recommendations. Important details about this process:</p>
     <ul>
-        <li>To provide expense tracking and budget management features.</li>
-        <li>To generate AI-powered financial analysis and personalized recommendations.</li>
-        <li>To manage your gamification progress (XP, levels, badges, streaks).</li>
-        <li>To sync your data across devices (if you opt in).</li>
-        <li>To send you optional notifications (daily reminders, weekly summaries).</li>
+        <li>Data is transmitted only when you explicitly request an analysis.</li>
+        <li>Data is sent over encrypted HTTPS connections.</li>
+        <li>Your financial data is <strong>not stored</strong> on the proxy server or by DeepSeek. It is processed in real time and deleted immediately after the analysis result is returned to you.</li>
+        <li>No server-side logs of your financial data are retained.</li>
+        <li>You can stop using the AI analysis feature at any time; no data will be sent without your action.</li>
     </ul>
 
-    <h2>4. AI Analysis</h2>
-    <p>Our AI features analyze your spending patterns to provide financial insights. This analysis:</p>
+    <h3>3.3 Advertising</h3>
+    <p>Wallet AI displays advertisements through Google AdMob to support the free version of the app. To serve relevant ads, AdMob may collect the following information:</p>
     <ul>
-        <li>Uses only the financial data you manually enter in the app.</li>
-        <li>Is processed through secure, encrypted API connections.</li>
-        <li>Does not store your data on AI provider servers beyond the request processing time.</li>
-        <li>Can be disabled at any time in your settings.</li>
+        <li>Device advertising identifier (IDFA, if you have granted tracking permission).</li>
+        <li>IP address and general (non-precise) location derived from it.</li>
+        <li>Device type and operating system version.</li>
+        <li>General app usage information for ad frequency and performance measurement.</li>
+    </ul>
+    <p><strong>Your financial data (expenses, budgets, savings goals, subscriptions, and notes) is never shared with AdMob or any advertising partner.</strong> Ad-related data collection is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Wallet AI integrates with the following third-party services:</p>
+    <ul>
+        <li><strong>DeepSeek API</strong> (via Supabase proxy): Used exclusively for AI-powered financial analysis. Your financial data is sent only when you request an analysis and is not stored by DeepSeek or the proxy server after the response is delivered.</li>
+        <li><strong>Google AdMob:</strong> Used for displaying advertisements. AdMob may collect device identifiers and IP address for ad personalization and measurement. No financial data is shared with AdMob.</li>
+    </ul>
+    <p>We do not integrate with any other third-party analytics, tracking, or data-brokering services beyond the two listed above.</p>
+
+    <h2>5. Data Retention</h2>
+    <ul>
+        <li><strong>Local data:</strong> All financial data stored on your device is retained until you manually delete individual records within the app or uninstall the app entirely. Uninstalling the app permanently removes all locally stored data.</li>
+        <li><strong>AI analysis data:</strong> Financial data sent for AI analysis is processed in real time and deleted immediately after the analysis result is returned. No copy is retained on any server.</li>
+        <li><strong>AdMob data:</strong> Data collected by Google AdMob is retained according to <a href="https://policies.google.com/technologies/ads" target="_blank">Google's data retention policies</a>. You can manage your ad preferences through your device's privacy settings.</li>
     </ul>
 
-    <h2>5. Data Storage and Security</h2>
+    <h2>6. Data Security</h2>
+    <p>We take reasonable measures to protect your information:</p>
     <ul>
-        <li><strong>Local Storage:</strong> Your financial data is primarily stored locally on your device using encrypted SQLite database.</li>
-        <li><strong>Secure Storage:</strong> Sensitive information (API keys, authentication tokens) is stored in iOS Keychain / Android Keystore.</li>
-        <li><strong>Cloud Sync:</strong> If enabled, data is synced via Supabase with PostgreSQL, using industry-standard encryption (TLS 1.2+).</li>
-        <li><strong>Biometric Protection:</strong> The app supports Face ID / Touch ID for additional security.</li>
-    </ul>
-
-    <h2>6. Data Sharing</h2>
-    <p>We do NOT share, sell, or rent your personal information to third parties. Your data may only be shared in the following circumstances:</p>
-    <ul>
-        <li>When required by law or legal process.</li>
-        <li>To protect our rights, privacy, safety, or property.</li>
+        <li>Financial data is stored locally in the app's sandboxed storage, protected by iOS security mechanisms.</li>
+        <li>All network communications (AI analysis requests) use industry-standard TLS/HTTPS encryption.</li>
+        <li>The Supabase proxy server acts as a secure intermediary, ensuring API credentials are never exposed on your device.</li>
     </ul>
 
     <h2>7. Your Rights</h2>
+    <p>You have full control over your data:</p>
     <ul>
-        <li><strong>Access:</strong> You can view all your data within the app.</li>
-        <li><strong>Export:</strong> Premium users can export their data as CSV files.</li>
-        <li><strong>Deletion:</strong> You can delete your account and all associated data at any time from the Profile screen.</li>
-        <li><strong>Opt-out:</strong> You can disable notifications, AI analysis, and cloud sync independently.</li>
+        <li><strong>View and edit:</strong> You can view, edit, or delete any expense, budget, savings goal, or subscription record at any time within the app.</li>
+        <li><strong>Delete all data:</strong> You can delete all app data by going to iOS Settings and deleting the Wallet AI app, which permanently removes the local SQLite database.</li>
+        <li><strong>Withdraw AI consent:</strong> You can stop using the AI analysis feature at any time. No data is sent to any server unless you actively request an analysis.</li>
+        <li><strong>Ad tracking:</strong> You can limit ad tracking or reset your advertising identifier through iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
+        <li><strong>Request data deletion:</strong> If you have any concerns or wish to request data deletion, you can contact the developer (see Section 11).</li>
     </ul>
 
     <h2>8. Children's Privacy</h2>
-    <p>Wallet AI is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+    <p>Wallet AI is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. Google AdMob within the app is configured to serve child-safe advertisements in compliance with applicable regulations. If you are a parent or guardian and believe your child has provided personal information through the app, please contact us immediately using the information in Section 11, and we will take steps to delete such information.</p>
 
-    <h2>9. In-App Purchases</h2>
-    <p>Wallet AI offers optional premium subscriptions ($6.99/month or $49.99/year). Purchases are processed through Apple's App Store. We do not have access to your payment information.</p>
+    <h2>9. International Users</h2>
+    <p>If you use Wallet AI outside of the country where the developer is based, please note that when you request an AI analysis, your financial data may be transmitted to servers located in other jurisdictions. By using the AI analysis feature, you consent to this transfer. All transfers are encrypted and data is deleted immediately after processing.</p>
 
     <h2>10. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the app and updating the "Last updated" date.</p>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the app's features or applicable regulations. When we make changes, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-    <h2>11. No Advertisements</h2>
-    <p>Wallet AI does not display any advertisements. We do not use any advertising SDKs or tracking frameworks.</p>
-
-    <h2>12. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p>Email: <a href="mailto:support@walletai.app">support@walletai.app</a></p>
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact the developer:</p>
+    <ul>
+        <li><strong>Developer:</strong> Batuhan Senavci</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/ralf9090" target="_blank">github.com/ralf9090</a></li>
+    </ul>
 
     <hr>
-    <p style="font-size: 0.9em; color: #888;">Wallet AI &copy; 2026. All rights reserved.</p>
+    <p class="footer">Wallet AI &copy; 2026 Batuhan Senavci. All rights reserved.</p>
 </body>
 </html>
